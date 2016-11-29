@@ -1,0 +1,36 @@
+﻿<Page
+    x:Class="flickr_redes.imagen_net"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:flickr_redes"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <Image x:Name="CargarImagen" HorizontalAlignment="Stretch" Height="225" VerticalAlignment="Top" Width="300" Margin="0,120,0,0"/>
+        <Button x:Name="buttonRetorno"   Content="Regresar" FontSize="20" HorizontalAlignment="Center"  VerticalAlignment="Bottom" Click="buttonRetorno_Click" Margin="0,0,0,50"/>
+
+
+        <HyperlinkButton Name="btn_Face" Margin="80,100,0,0" Height="50" Width="50">
+            <Image Width="40" Height ="40"  Source="Assets/face_40x40.png"/>
+        </HyperlinkButton>
+
+        <HyperlinkButton Name="btn_Twit" Margin="130,100,0,0" Height="50" Width="50">
+            <Image Width="40" Height ="40" Source = "/Assets/twit_40x40.png"/>
+        </HyperlinkButton>
+
+        <HyperlinkButton Name="btn_Goog" Margin="180,100,0,0" Height="50" Width="50">
+            <Image Width="40" Height ="40" Source="Assets/goog_40x40.png"/>
+        </HyperlinkButton>
+
+        <HyperlinkButton Name="btn_Link" Margin="230,100,0,0" Height="50" Width="50">
+            <Image Width="40" Height ="40" Source="Assets/link_40x40.png"/>
+        </HyperlinkButton>
+
+        <TextBlock x:Name="textBlock_Titulo" HorizontalAlignment="Center" Margin="0,20,0,0" TextWrapping="Wrap" Text="" Foreground="Blue" VerticalAlignment="Top" Height="80" Width="200"  FontWeight="SemiBold" TextAlignment="Center" FontSize="12">
+        
+         </TextBlock>
+    </Grid>
+</Page>
